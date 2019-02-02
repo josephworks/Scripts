@@ -9,3 +9,12 @@ echo "# Jenkins Apt Repository" | sudo tee -a /etc/apt/sources.list
 echo "deb https://pkg.jenkins.io/debian binary/" | sudo tee -a /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install jenkins -y
+
+echo "Installing NOIP DUC"
+sudo su
+cd /usr/local/src/
+wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
+tar xf noip-duc-linux.tar.gz
+cd noip-2.1.9-1/
+make install
+/usr/local/bin/noip2
