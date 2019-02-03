@@ -6,8 +6,7 @@ sudo update-alternatives --config java
 echo "Installing Jenkins"
 echo "" | sudo tee -a /etc/apt/sources.list
 echo "# Jenkins Apt Repository" | sudo tee -a /etc/apt/sources.list
-echo "deb https://pkg.jenkins.io/debian binary/" | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
+sudo apt-add-repository 'deb https://pkg.jenkins.io/debian binary/'
 sudo apt-get install jenkins -y
 
 echo "Installing NOIP DUC"
