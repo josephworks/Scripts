@@ -24,6 +24,7 @@ wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ cosmic main'
 sudo apt install --install-recommends winehq-devel
+sudo apt install winetricks
 
 echo "Installing WebMin"
 wget https://prdownloads.sourceforge.net/webadmin/webmin_1.900_all.deb
