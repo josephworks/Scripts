@@ -18,3 +18,10 @@ tar xf noip-duc-linux.tar.gz
 cd noip-2.1.9-1/
 make install
 /usr/local/bin/noip2
+
+echo "Installing Wine"
+cd ~
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ cosmic main'
+sudo apt install --install-recommends winehq-devel
