@@ -28,3 +28,4 @@ sudo apt install --install-recommends winehq-devel
 echo "Installing WebMin"
 wget https://prdownloads.sourceforge.net/webadmin/webmin_1.900_all.deb
 sudo dpkg -i webmin_1.900_all.deb
+sudo apt --fix-broken install
