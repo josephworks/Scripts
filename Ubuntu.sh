@@ -13,6 +13,8 @@ then
    sudo apt-get install jenkins -y
 fi
 
+echo ""
+
 read -p "Would you like to install NOIP DUC? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -26,6 +28,8 @@ then
    /usr/local/bin/noip2
 fi
 
+echo ""
+
 read -p "Would you like to install Wine? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -37,6 +41,8 @@ then
    sudo apt install --install-recommends winehq-devel
    sudo apt install winetricks playonlinux q4wine
 fi
+
+echo ""
 
 read -p "Would you like to install WebMin? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
