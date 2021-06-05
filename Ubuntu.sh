@@ -48,8 +48,8 @@ read -p "Would you like to install WebMin? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
    echo "Installing WebMin"
-   wget https://prdownloads.sourceforge.net/webadmin/webmin_1.900_all.deb
-   sudo dpkg -i webmin_1.900_all.deb
+   wget https://prdownloads.sourceforge.net/webadmin/webmin_1.973_all.deb
+   sudo dpkg -i webmin_1.973_all.deb
    sudo apt --fix-broken install
 fi
 
